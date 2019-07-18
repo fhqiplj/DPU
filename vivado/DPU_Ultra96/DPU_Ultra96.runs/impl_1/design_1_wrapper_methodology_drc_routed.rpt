@@ -1,0 +1,58 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Wed Jul 17 14:17:08 2019
+| Host         : DESKTOP-A4UJQGS running 64-bit major release  (build 9200)
+| Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xczu3eg-sbva484-1-e
+| Speed File   : -1
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 4
++-----------+----------+----------------------------------------------------+------------+
+| Rule      | Severity | Description                                        | Violations |
++-----------+----------+----------------------------------------------------+------------+
+| TIMING-4  | Warning  | Invalid primary clock redefinition on a clock tree | 1          |
+| TIMING-9  | Warning  | Unknown CDC Logic                                  | 1          |
+| TIMING-27 | Warning  | Invalid primary clock on hierarchical pin          | 1          |
+| CLKC-40   | Advisory | Substitute PLLE4 for MMCME4 check                  | 1          |
++-----------+----------+----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-4#1 Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock design_1_i/clk_wiz_0/inst/clk_in1 is defined downstream of clock clk_pl_0 and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-27#1 Warning
+Invalid primary clock on hierarchical pin  
+A primary clock design_1_i/clk_wiz_0/inst/clk_in1 is created on an inappropriate internal pin design_1_i/clk_wiz_0/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+CLKC-40#1 Advisory
+Substitute PLLE4 for MMCME4 check  
+The MMCME4 cell design_1_i/clk_wiz_0/inst/mmcme4_adv_inst has a single input clock whose source driver, UNKNOWN, is not optimally located and the MMCM has a configuration which could be accommodated by a PLL.  Consider changing the MMCM to a PLL which could align better with the input clock driver.
+Related violations: <none>
+
+

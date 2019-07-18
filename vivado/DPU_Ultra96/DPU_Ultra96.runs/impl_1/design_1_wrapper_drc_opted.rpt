@@ -1,0 +1,282 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Wed Jul 17 13:59:15 2019
+| Host         : DESKTOP-A4UJQGS running 64-bit major release  (build 9200)
+| Command      : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+| Design       : design_1_wrapper
+| Device       : xczu3eg-sbva484-1-e
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 49
++-----------+----------+--------------------------------------------------+------------+
+| Rule      | Severity | Description                                      | Violations |
++-----------+----------+--------------------------------------------------+------------+
+| DPOP-3    | Warning  | PREG Output pipelining                           | 1          |
+| REQP-1731 | Warning  | DSP_Abus_preadd_amult_sel_A_sign_bit_restriction | 48         |
++-----------+----------+--------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPOP-3#1 Warning
+PREG Output pipelining  
+DSP design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_91fedcf3/u_28227356/u_143ab598/u_dsp/g_d4f57ac9.u_dsp48e2 output design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_91fedcf3/u_28227356/u_143ab598/u_dsp/g_d4f57ac9.u_dsp48e2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+REQP-1731#1 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[0].u_3d322b44/g_b12a7213[0].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#2 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[0].u_3d322b44/g_b12a7213[1].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#3 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[0].u_3d322b44/g_b12a7213[2].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#4 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[0].u_3d322b44/g_b12a7213[3].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#5 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[10].u_3d322b44/g_b12a7213[0].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#6 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[10].u_3d322b44/g_b12a7213[1].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#7 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[10].u_3d322b44/g_b12a7213[2].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#8 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[10].u_3d322b44/g_b12a7213[3].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#9 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[11].u_3d322b44/g_b12a7213[0].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#10 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[11].u_3d322b44/g_b12a7213[1].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#11 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[11].u_3d322b44/g_b12a7213[2].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#12 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[11].u_3d322b44/g_b12a7213[3].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#13 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[1].u_3d322b44/g_b12a7213[0].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#14 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[1].u_3d322b44/g_b12a7213[1].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#15 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[1].u_3d322b44/g_b12a7213[2].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#16 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[1].u_3d322b44/g_b12a7213[3].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#17 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[2].u_3d322b44/g_b12a7213[0].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#18 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[2].u_3d322b44/g_b12a7213[1].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#19 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[2].u_3d322b44/g_b12a7213[2].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#20 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[2].u_3d322b44/g_b12a7213[3].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#21 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[3].u_3d322b44/g_b12a7213[0].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#22 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[3].u_3d322b44/g_b12a7213[1].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#23 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[3].u_3d322b44/g_b12a7213[2].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#24 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[3].u_3d322b44/g_b12a7213[3].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#25 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[4].u_3d322b44/g_b12a7213[0].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#26 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[4].u_3d322b44/g_b12a7213[1].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#27 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[4].u_3d322b44/g_b12a7213[2].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#28 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[4].u_3d322b44/g_b12a7213[3].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#29 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[5].u_3d322b44/g_b12a7213[0].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#30 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[5].u_3d322b44/g_b12a7213[1].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#31 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[5].u_3d322b44/g_b12a7213[2].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#32 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[5].u_3d322b44/g_b12a7213[3].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#33 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[6].u_3d322b44/g_b12a7213[0].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#34 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[6].u_3d322b44/g_b12a7213[1].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#35 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[6].u_3d322b44/g_b12a7213[2].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#36 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[6].u_3d322b44/g_b12a7213[3].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#37 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[7].u_3d322b44/g_b12a7213[0].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#38 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[7].u_3d322b44/g_b12a7213[1].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#39 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[7].u_3d322b44/g_b12a7213[2].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#40 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[7].u_3d322b44/g_b12a7213[3].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#41 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[8].u_3d322b44/g_b12a7213[0].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#42 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[8].u_3d322b44/g_b12a7213[1].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#43 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[8].u_3d322b44/g_b12a7213[2].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#44 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[8].u_3d322b44/g_b12a7213[3].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#45 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[9].u_3d322b44/g_b12a7213[0].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#46 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[9].u_3d322b44/g_b12a7213[1].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#47 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[9].u_3d322b44/g_b12a7213[2].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#48 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+design_1_i/dpu_eu_0/inst/g_696711ea.u_6220cd42/u_e4b8701f/u_d38c8c1d/u_b3581169/g_c927b391[9].u_3d322b44/g_b12a7213[3].g_59a7569c.u_b256199b/inst_dsp48e2/g_d4f57ac9.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+

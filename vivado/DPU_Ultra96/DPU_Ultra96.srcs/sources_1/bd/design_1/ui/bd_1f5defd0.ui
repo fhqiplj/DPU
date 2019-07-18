@@ -1,0 +1,29 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
+#  -string -flagsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -y 1170 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 1 -y 80 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -y 600 -defaultsOSRD
+preplace inst proc_sys_reset_1 -pg 1 -lvl 1 -y 780 -defaultsOSRD
+preplace inst proc_sys_reset_2 -pg 1 -lvl 1 -y 960 -defaultsOSRD
+preplace inst dpu_eu_0 -pg 1 -lvl 1 -y 400 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -y 220 -defaultsOSRD
+preplace netloc dpu_eu_0_DPU0_M_AXI_INSTR 1 0 2 10 1330 620
+preplace netloc dpu_eu_0_dpu_interrupt 1 0 2 -20 1380 710
+preplace netloc clk_wiz_0_locked 1 0 2 -40 1370 740
+preplace netloc dpu_eu_0_DPU0_M_AXI_DATA0 1 0 2 -10 1310 640
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 2 -120 1420 650
+preplace netloc dpu_eu_0_DPU0_M_AXI_DATA1 1 0 2 0 1320 630
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_LPD 1 0 2 -80 1340 610
+preplace netloc axi_smc_M00_AXI 1 0 2 -30 1300 660
+preplace netloc proc_sys_reset_1_peripheral_aresetn 1 0 2 -100 1400 690
+preplace netloc proc_sys_reset_2_peripheral_aresetn 1 0 2 -70 1410 680
+preplace netloc clk_wiz_0_clk_out1 1 0 2 -60 1350 730
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 2 -90 1430 670
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 0 2 -110 1390 700
+preplace netloc clk_wiz_0_clk_out2 1 0 2 -50 1360 720
+levelinfo -pg 1 -140 310 760 -top 0 -bot 1440
+",
+}
+
